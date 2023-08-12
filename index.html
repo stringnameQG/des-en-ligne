@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux de dès</title>
+    <link rel="stylesheet" href="des-en-ligne/CSS/Jeux-de-dès-styles.css">
+</head>
+<body>
+    <div class="info-regle">
+        <p class="info-regle__text">
+            Règles : <br>
+            Le jeu comprend 2 joueurs sur un seul et même écran. <br>
+            Chaque joueur possède un score temporaire (ROUND) et un score global (GLOBAL). <br>
+            À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite. <br>
+            Le résultat d’un lancer est ajouté au ROUND. <br>
+            Lors de son tour, le joueur peut décider à tout moment de: <br>
+            - Cliquer sur l’option “Hold”, qui permet d’envoyer les points du ROUND vers le GLOBAL. 
+            Ce sera alors le tour de l’autre joueur. <br>
+            - Lancer le dé. S’il obtient un 1, son score ROUND est perdu et c’est la fin de son tour. <br>
+            Le premier joueur qui atteint les 100 points sur global gagne le jeu. <br>
+        </p>
+    </div>
+    <div class="zone-player zone-player__player1">
+        <div class="zone-player__affichage-player">
+            <h1 class="zone-player__affichage-player1">PLAYER 1 
+                <div class="zone-player__affichage-player__tour zone-player__affichage-player__tour-player1"></div>
+            </h1> 
+            <span class="zone-player__global-player zone-player__global-player1">0</span>
+        </div>
+        <div class="zone-player__affichage-score zone-player__affichage-score__player-1">
+            <h2>CURRENT</h2>
+            <span class="zone-player__affichage-score__round  zone-player__affichage-score__round1">0</span>
+        </div>
+    </div>
+    <div class="zone-regle">
+        <div class="zone-regle__nouvelle-partie">
+            <img class="zone-regle__nouvelle-partie__image" src="des-en-ligne/Image/plus-circle.svg">
+            <h3 class="zone-regle__nouvelle-partie__text">NEW GAME</h3>
+        </div>
+        <img class="zone-regle__dès-image" src="des-en-ligne/Image/dès-image/dice-6-fill.svg">
+        <div class="zone-regle__action">
+            <div class="zone-regle__action__roll-dice">
+                <img class="zone-regle__action__roll-dice__image" src="des-en-ligne/Image/arrow-repeat.svg">
+                <h3 class="zone-regle__action__roll-dice__text">ROLL DICE</h3>
+            </div>
+            <div class="zone-regle__action__hold">
+                <img class="zone-regle__action__hold__image" src="des-en-ligne/Image/box-arrow-in-down.svg">
+                <h3 class="zone-regle__action__hold__text">HOLD</h3>
+            </div>
+        </div>
+    </div>
+    <div class="zone-player zone-player__player2">
+        <div class="zone-player__affichage-player">
+            <h1 class="zone-player__affichage-player2">PLAYER 2 
+                <div class="zone-player__affichage-player__tour zone-player__affichage-player__tour-player2"></div>
+            </h1>
+            <span class="zone-player__global-player zone-player__global-player2">0</span>
+        </div>
+        <div class="zone-player__affichage-score zone-player__affichage-score__player-2">
+            <h2>CURRENT</h2>
+            <span class="zone-player__affichage-score__round zone-player__affichage-score__round2">0</span>
+        </div>
+    </div>
+    <img class="image-info" src="des-en-ligne/Image/info-circle-fill.svg">
+<script src="des-en-ligne/JavaScript/Jeux-de-dès.js"></script>
+<script src="des-en-ligne/JavaScript/Info.js"></script>
+</body>
+</html>
